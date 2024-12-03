@@ -1,0 +1,78 @@
+html, body {
+  height: 100%; /* Ensures the body spans the entire height of the viewport */
+  margin: 0; /* Removes default browser margin for consistent layout */
+}
+
+.App {
+  display: flex; /* Enables flexbox for layout control */
+  flex-direction: column; /* Stacks children (header, content, footer) vertically */
+  min-height: 100vh; /* Ensures the app takes up the full height of the viewport */
+  text-align: center; /* Centers text within the app by default */
+  max-width: 100%; /* Prevents overflow by restricting app width */
+  margin: auto; /* Centers the app horizontally if needed */
+}
+
+.App-logo {
+  height: 40vmin; /* Scales logo size dynamically based on viewport size */
+  pointer-events: none; /* Prevents user interaction with the logo */
+}
+
+.alert {
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-in/out for alerts */
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Applies infinite spin animation */
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Complete a full rotation */
+  }
+}
+
+
+/* Header and Footer Styling */
+header {
+  width: 100%; /* Spans the full width of the viewport */
+  background-color: #f8f9fa; /* Light gray background for contrast */
+  padding: 20px 10px; /* Provides spacing inside the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+footer {
+  background-color: #f8f9fa; /* Matches the header's background for consistency */
+  padding: 20px; /* Adds padding inside the footer */
+  text-align: center; /* Centers text content */
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Adds shadow at the top edge */
+  width: 100%; /* Ensures it spans the viewport width */
+  font-size: 14px; /* Reduces font size for subtle footer content */
+  color: #6c757d; /* Subtle gray color for text */
+  margin-top: auto; /* Ensures footer stays at the bottom when content is less */
+}
+
+.container {
+  flex-grow: 1;
+}
+/* Navbar Customization */
+.custom-navbar {
+  width: 100%; /* Full width of the viewport */
+  height: 80px; /* Fixed height for a consistent navbar size */
+  padding: 0 20px; /* Adds spacing inside the navbar */
+  font-size: 1.2rem; /* Increases font size for readability */
+  display: flex; /* Flexbox layout for alignment */
+  align-items: center; /* Vertically aligns content in the center */
+  justify-content: space-between; /* Distributes items with space between them */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.navbar-brand-custom {
+  font-size: 1.5rem; /* Increases brand name font size for emphasis */
+  font-weight: bold; /* Makes the brand name stand out */
+}
